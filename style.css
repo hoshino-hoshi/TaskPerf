@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #353;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+    width: 1400px;
+    margin: 0 auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color: white;
+}
+
+header nav a:hover {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color: rgba(255, 255, 255, 0.526);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.bg_sky {
+    position: absolute;
+    z-index: 1;
+    width: 1800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg_bgrass {
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+    top: 100%;
+    left: 75%;
+}
+
+.bg_fgrass {
+    position: absolute;
+    z-index: 3;
+    width: 2600px;
+    top: 90%;
+    left: calc(50% - 15px);
+}
+
+.bg_fg {
+    position: absolute;
+    z-index: 6;
+    width: 2000px;
+    top: calc(50% + 250px);
+    left: calc(50% - 15px);
+}
+
+.bg_pic {
+    position: absolute;
+    z-index: 5;
+    width: 447px;
+    top: 40%;
+    left: 50%;
+}
+
+.bg_greetings {
+    position: absolute;
+    z-index: 4;
+    top: 30%;
+    left: 20%;
+    line-height: 4em;
+    color: white;
+    text-shadow: -2px 5px 3px #353;
+    pointer-events: auto;
+}
+
+.bg_greetings h2 {
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.bg_greetings h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+::selection {
+    background-color: rgba(51, 85, 51, 0.456);
+}
+
+.anim {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+}
+
+@media (max-width: 425px) {
+    *, *::after, *::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        background-color: #353;
+    }
+
+    header nav {
+        width: 400px;
+        margin: 0 auto;
+        padding: .5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    
+    header ul a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 0 1.5rem;
+        color: white;
+    }
+    
+    header ul a:hover {
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 0 1.5rem;
+        color: rgba(255, 255, 255, 0.526);
+    }
+    
+    main {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .bg_sky {
+        position: absolute;
+        z-index: 1;
+        width: 1200px;
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .bg_bgrass {
+        position: absolute;
+        z-index: 2;
+        width: 1600px;
+        top: 100%;
+        left: 75%;
+    }
+    
+    .bg_fgrass {
+        position: absolute;
+        z-index: 3;
+        width: 1300px;
+        top: 90%;
+        left: calc(50% - 15px);
+    }
+    
+    .bg_fg {
+        position: absolute;
+        z-index: 6;
+        width: 900px;
+        top: calc(50% + 250px);
+        left: calc(50% - 15px);
+    }
+    
+    .bg_pic {
+        position: absolute;
+        z-index: 5;
+        width: 200px;
+        top: 40%;
+        left: 50%;
+    }
+    
+    .bg_greetings {
+        position: absolute;
+        z-index: 4;
+        top: 15%;
+        left: 50%;
+        line-height: 2em;
+        color: white;
+        text-shadow: -2px 5px 3px #353;
+        pointer-events: auto;
+        text-align: center;
+    }
+    
+    .bg_greetings h2 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    
+    .bg_greetings h1 {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+    
+    ::selection {
+        background-color: rgba(51, 85, 51, 0.456);
+    }
+    
+    .anim {
+        pointer-events: none;
+        transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+    }
+}
+
+@media (max-width: 2560px) and (min-width: 1500px){
+    *, *::after, *::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        background-color: #353;
+    }
+    
+    main {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .bg_sky {
+        position: absolute;
+        z-index: 1;
+        width: 3000px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .bg_bgrass {
+        position: absolute;
+        z-index: 2;
+        width: 3000px;
+        top: 100%;
+        left: 80%;
+    }
+    
+    .bg_fgrass {
+        position: absolute;
+        z-index: 3;
+        width: 5000px;
+        top: 90%;
+        left: calc(50% - 15px);
+    }
+    
+    .bg_fg {
+        position: absolute;
+        z-index: 6;
+        width: 3400px;
+        top: calc(50% + 400px);
+        left: calc(50% + 50px);
+    }
+    
+    .bg_pic {
+        position: absolute;
+        z-index: 5;
+        width: 500px;
+        top: 40%;
+        left: 50%;
+    }
+    
+    .bg_greetings {
+        position: absolute;
+        z-index: 4;
+        top: 20%;
+        left: 20%;
+        line-height: 6em;
+        color: white;
+        text-shadow: -2px 5px 3px #353;
+        pointer-events: auto;
+    }
+    
+    .bg_greetings h2 {
+        font-weight: 300;
+        font-size: 7rem;
+    }
+    
+    .bg_greetings h1 {
+        font-weight: 900;
+        font-size: 5rem;
+    }
+    
+    ::selection {
+        background-color: rgba(51, 85, 51, 0.456);
+    }
+    
+    .anim {
+        pointer-events: none;
+        transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 500px) {
+    *, *::after, *::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        background-color: #353;
+    }
+    
+    main {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .bg_sky {
+        position: absolute;
+        z-index: 1;
+        width: 1800px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .bg_bgrass {
+        position: absolute;
+        z-index: 2;
+        width: 1900px;
+        top: 100%;
+        left: 75%;
+    }
+    
+    .bg_fgrass {
+        position: absolute;
+        z-index: 3;
+        width: 2600px;
+        top: 90%;
+        left: calc(50% - 15px);
+    }
+    
+    .bg_fg {
+        position: absolute;
+        z-index: 6;
+        width: 2000px;
+        top: calc(50% + 250px);
+        left: calc(50% - 15px);
+    }
+    
+    .bg_pic {
+        position: absolute;
+        z-index: 5;
+        width: 280px;
+        top: 40%;
+        left: 50%;
+    }
+    
+    .bg_greetings {
+        position: absolute;
+        z-index: 4;
+        top: 30%;
+        left: 20%;
+        line-height: 2em;
+        color: white;
+        text-shadow: -2px 5px 3px #353;
+        pointer-events: auto;
+    }
+    
+    .bg_greetings h2 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    
+    .bg_greetings h1 {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+    
+    ::selection {
+        background-color: rgba(51, 85, 51, 0.456);
+    }
+    
+    .anim {
+        pointer-events: none;
+        transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+    }
+}
